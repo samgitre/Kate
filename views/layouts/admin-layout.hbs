@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <script src="/javascript/bootstrap.js" rel="script"></script>
+    {{> scripts }}
+</head>
+<body>
+<div class="container">
+    {{> navbar }}
+
+        <div class="row">
+
+            <div class="col-md-2 pull-left">
+                {{> admin-sidebar }}
+            </div>
+
+            {{{body}}}
+
+        </div>
+</div>
+{{> footer }}
+
+</body>
+</html>
