@@ -1,2 +1,35 @@
 
 <p>Welcome to {{title}}</p>
+
+{{#each products}}
+    <div  style="padding-top:20px">
+        <div class="row">
+            {{#each this}}
+
+                <div class="col-sm-6 col-md-3 home-grid grow">
+                    <div class="thumbnail ">
+                        <a href="/product-details">
+                            <img src="{{ this.imagePath }}" class="img zoom-img" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3 class="liz">{{ this.title }}</h3>
+
+
+                            <div class="home-product-bottom">
+                                <h3><a href="/add-to-cart/{{ this.id }}">Add to cart</a></h3>
+                            </div>
+                            <div class="srch">
+                                <span> ${{ this.price }}</span>
+                                <h4> {{ this.discription }}</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            {{/each}}
+
+        </div>
+    </div>
+{{/each}}
+<hr>
