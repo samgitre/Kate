@@ -1,5 +1,5 @@
 body {
-  padding: 20px;
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,4 +8,8 @@ a {
 }
  h2{
    color: orangered;
+ }
+ li > a{
+     color: #ffffff;
+     font-size: 14px;
  }
