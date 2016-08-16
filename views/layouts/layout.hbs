@@ -3,9 +3,9 @@
   <head>
     <title>{{title}}</title>
 
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-      <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
-      <script src="/javascript/bootstrap.js" rel="script"></script>
+    <link rel='stylesheet' href='/css/style.css' />
+      <link rel='stylesheet' href='/css/bootstrap.css' />
+      <script src="/js/bootstrap.js" rel="script"></script>
 
       {{> scripts }}
   </head>
@@ -15,12 +15,17 @@
           <span class="glyphicon glyphicon-shopping-cart"></span>
       </div>
           {{> navbar }}
-      <h2 style="color: orangered"> {{ title }}</h2>
+      <h3 style="color: orangered"> {{ title }}</h3>
+
           <div class="row">
               <div class="col-md-2 pull-left">
                   {{> sidebar }}
               </div>
+
+              <div class="col-md-8">
               {{{body}}}
+
+              </div>
 
           </div>
 

@@ -2,32 +2,32 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var userSchema = new Schema({
+var productsSchema = new Schema({
     title :{
         type : String,
-        Required: true
+        required: true
     },
     category :{
         type : String,
-        Required: true
+        required: true
     },
     color :{
         type : String,
-        Required: true
+        required: true
     },
     price :{
         type : Number,
-        Required: true
+        required: true
     },
     quantity:{
         type : Number,
-        Required: true
+        required: true
     },
-    photo:{
+    image :{
         data : Buffer,
         contentType: String
     }
 });
-module.exports = mongoose.model('Product', userSchema);
+module.exports = mongoose.model('Product', productsSchema);
 
 

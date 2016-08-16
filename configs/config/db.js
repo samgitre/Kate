@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var url = 'mongodb://localhost/boutique_db';
+var url = 'mongodb://localhost/boutiqueDB';
 
 mongoose.connect(url, function (err) {
     if (err){
